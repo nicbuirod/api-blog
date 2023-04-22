@@ -5,6 +5,10 @@ import commentRoutes from "./routes/comment.route.js";
 const app = express();
 const PORT = process.env.PORT;
 
+app.get("/", (req, res) => {
+  res.json({ message: "api blog" });
+});
+
 //middleware
 
 app.use(express.json());
