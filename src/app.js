@@ -13,6 +13,6 @@ app.use(express.json());
 app.use("/post", postRoutes);
 app.use("/comment", commentRoutes);
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("server initialized...");
 });
